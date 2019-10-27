@@ -1,0 +1,70 @@
+CLASS - Classificação
+
+classes para formatações específicas, seletores para gerais
+			
+id: utilizado apenas uma única vez dentro da página. A recomendação é utilizar ids para estruturar as páginas. Por exemplo, um site só tem um header, poderiamos usar id. Já as colunas do site poderiam ser classes, pois se repetem.
+
+Sempre que for formatar algo que precise aplicar mais de uma vez dentro do mesmo HTML: classe.
+Mas se for utilizar apenas uma vez: id.	
+
+DIV - DIVISÃO
+
+para organizar o conteudo. É um elemento do tipo block, que ocupa todo o espaço.
+
+SPAN
+
+Funciona como uma div. É um elemento inline, ou seja, funciona como div, mas agrupa os elementos linha a linha. Diferente da div, que é um elemento do tipo block e deixa os textos/elementos um abaixo do outro.
+
+BORDER
+
+Definimos tres valores: 1) espessura em pixels, por exemplo 2) tipo 3) cor.
+
+
+MEDIDAS
+
+px - tamanho fixo;
+% - tamanho relativo;
+em - tamanho relativo ao container pai.
+
+1em equivale ao tamanho padrão do container pai. Voce consegue centralizar uma medida, mantendo os textos proporcionais.
+
+BACKGROUND
+
+background-position: center center / primeiro valor na horizontal e segundo na vertical.
+
+CLEAR
+
+Limpa o fluxo flutuante e permite expansão.
+
+Toda vez que utiliza um float em conteúdos, os conteúdos flutuantes nao fazem a caixa  que ele está dentro expandir, até que ocupem todo o espaçamento. PRa isso, precisa criar um outro elemento, no caso uma div, e limpar o fluxo com clear.
+
+Ao limpar o fluxo, ele expande para que essa div que nao está flutuando apareça corretamente. 
+
+POSIÇÃO ESTÁTICA
+
+É a posição padrão, em blocos.
+
+
+POSIÇÃO RELATIVA
+
+Quando usamos relativo, precisamos usar propriedadaes de deslocamente: top, right, bottom e left para movimentar.
+
+Posicionamento é baseado na posição inicial do elemento.
+
+POSIÇÃO ABSOLUTA
+
+O elemento sai do fluxo normal do documento e não afeta a posição dos outros elementos da página, que se comportam como o elemento absoluto não existisse.
+A posição absoluta é calculada baseada no container do elemento, que tem uma posição. Se não, ele vai ser posicionado baseado no corpo da página, se o container nao tiver posição. Ou seja, vai ser baseado em elemtno que nao tenha posição estática.
+
+O posicionamento absoluto permite que defina uma caixa que é removida do fluxo do documento e você consegue alinhar essa caixa baseada no container que tenha uma posição.
+
+FIXED
+
+Da mesma manera que o absoluto, sai do fluxo normal do documento. 
+
+O posicionamento fica fixo em relação à janela do navegador. Utilizado para chats, menus...
+
+
+Z-INDEX
+
+Define qual elemento aparece primeiro no caso de sobreposição. Se o z-index for o mesmo, ele segue a ordem do documento.
